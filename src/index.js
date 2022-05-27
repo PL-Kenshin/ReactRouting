@@ -11,6 +11,7 @@ import {
 import Posts from './components/posts'
 import Home from './components/home'
 import NotFound from './components/notFound';
+import LoginForm from './components/loginForm';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -22,7 +23,9 @@ ReactDOM.render(
 
       <Route path="posts" element={<Posts/>}/>
       
-      <Route path="*" element={<NotFound/>}/>     
+      <Route path="*" element={<NotFound/>}/>
+
+      <Route path="login" element={<LoginForm/>}/>
       
       </Route>
 
