@@ -25,6 +25,12 @@ class LoginForm extends Component {
         return Object.keys(errors).length === 0 ? null : errors;
       };
 
+    handleChangeRoute = () => {
+    this.props.history.push('/');
+    window.location.reload();
+    };
+     
+
     handleSubmit = (event) => {
         event.preventDefault();
         
